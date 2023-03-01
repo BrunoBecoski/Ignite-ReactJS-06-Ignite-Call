@@ -1,3 +1,5 @@
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
 import Head from 'next/head'
 import { Heading, Text, MultiStep, TextInput, Button } from '@ignite-ui/react'
 import { useForm } from 'react-hook-form'
@@ -26,10 +28,19 @@ export default function Register() {
   const {
     register,
     handleSubmit,
+    setValue,
     formState: { errors, isSubmitting },
   } = useForm<RegisterFormData>({
     resolver: zodResolver(registerFormSchema),
   })
+
+  const router = useRouter()
+
+  useEffect(() => {
+    if (router.query.username) {
+      setValue('username', String(router.query.username))
+    }
+  }, [setValue, router.query?.username])
 
   async function handleRegister(data: RegisterFormData) {
     console.log(data)
