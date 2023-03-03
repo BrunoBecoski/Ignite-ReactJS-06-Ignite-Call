@@ -1,6 +1,6 @@
+import Head from 'next/head'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
-import Head from 'next/head'
 import { Heading, Text, MultiStep, TextInput, Button } from '@ignite-ui/react'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
@@ -51,6 +51,8 @@ export default function Register() {
         username: data.username,
         name: data.name,
       })
+
+      await router.push('/register/connect-calendar')
     } catch (err) {
       if (err instanceof AxiosError && err?.response?.data?.message) {
         alert(err.response.data.message)
@@ -64,7 +66,7 @@ export default function Register() {
   return (
     <Container>
       <Head>
-        <title>Cadastro | Ignite Call </title>
+        <title>Criar conta | Ignite Call </title>
       </Head>
 
       <Header>
