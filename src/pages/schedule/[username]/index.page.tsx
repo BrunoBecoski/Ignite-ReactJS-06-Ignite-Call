@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { Avatar, Heading, Text } from '@ignite-ui/react'
 
 import { prisma } from '../../../lib/prisma'
+import { ScheduleForm } from './ScheduleForm'
 
 import { Container, UserHeader } from './styles'
 
@@ -28,6 +29,8 @@ export default function Schedule({ user }: ScheduleProps) {
 
         <Text>{user.bio}</Text>
       </UserHeader>
+
+      <ScheduleForm />
     </Container>
   )
 }
