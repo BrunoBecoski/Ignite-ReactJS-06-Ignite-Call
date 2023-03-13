@@ -60,10 +60,9 @@ export const CalendarBody = styled('table', {
   },
 
   'tbody:before': {
-    content: '.',
-    lineHeight: '0.75rem',
+    content: '',
+    paddingBottom: '0.75rem',
     display: 'block',
-    color: '$gray800',
   },
 
   'tbody td': {

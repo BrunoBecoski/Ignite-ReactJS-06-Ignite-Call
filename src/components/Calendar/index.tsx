@@ -50,7 +50,7 @@ export function Calendar() {
             <td></td>
 
             <td>
-              <CalendarDay>1</CalendarDay>
+              <CalendarDay disabled>1</CalendarDay>
             </td>
 
             <td>
@@ -58,28 +58,28 @@ export function Calendar() {
             </td>
 
             <td>
-              <CalendarDay>3</CalendarDay>
+              <CalendarDay disabled>3</CalendarDay>
             </td>
             <td>
-              <CalendarDay>4</CalendarDay>
+              <CalendarDay disabled>4</CalendarDay>
             </td>
           </tr>
 
           <tr>
             <td>
-              <CalendarDay>5</CalendarDay>
+              <CalendarDay disabled>5</CalendarDay>
             </td>
 
             <td>
-              <CalendarDay>6</CalendarDay>
+              <CalendarDay disabled>6</CalendarDay>
             </td>
 
             <td>
-              <CalendarDay>7</CalendarDay>
+              <CalendarDay disabled>7</CalendarDay>
             </td>
 
             <td>
-              <CalendarDay>8</CalendarDay>
+              <CalendarDay disabled>8</CalendarDay>
             </td>
 
             <td>
@@ -87,12 +87,100 @@ export function Calendar() {
             </td>
 
             <td>
-              <CalendarDay>10</CalendarDay>
+              <CalendarDay disabled>10</CalendarDay>
             </td>
 
             <td>
-              <CalendarDay>11</CalendarDay>
+              <CalendarDay disabled>11</CalendarDay>
             </td>
+          </tr>
+
+          <tr>
+            <td>
+              <CalendarDay disabled>12</CalendarDay>
+            </td>
+
+            <td>
+              <CalendarDay>13</CalendarDay>
+            </td>
+
+            <td>
+              <CalendarDay>14</CalendarDay>
+            </td>
+
+            <td>
+              <CalendarDay>15</CalendarDay>
+            </td>
+
+            <td>
+              <CalendarDay>16</CalendarDay>
+            </td>
+
+            <td>
+              <CalendarDay>17</CalendarDay>
+            </td>
+
+            <td>
+              <CalendarDay>18</CalendarDay>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <CalendarDay>19</CalendarDay>
+            </td>
+
+            <td>
+              <CalendarDay>20</CalendarDay>
+            </td>
+
+            <td>
+              <CalendarDay>21</CalendarDay>
+            </td>
+
+            <td>
+              <CalendarDay>22</CalendarDay>
+            </td>
+
+            <td>
+              <CalendarDay>23</CalendarDay>
+            </td>
+
+            <td>
+              <CalendarDay>24</CalendarDay>
+            </td>
+
+            <td>
+              <CalendarDay>25</CalendarDay>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <CalendarDay>26</CalendarDay>
+            </td>
+
+            <td>
+              <CalendarDay>27</CalendarDay>
+            </td>
+
+            <td>
+              <CalendarDay>28</CalendarDay>
+            </td>
+
+            <td>
+              <CalendarDay>29</CalendarDay>
+            </td>
+
+            <td>
+              <CalendarDay>30</CalendarDay>
+            </td>
+
+            <td>
+              <CalendarDay>31</CalendarDay>
+            </td>
+
+            <td></td>
           </tr>
         </tbody>
       </CalendarBody>
