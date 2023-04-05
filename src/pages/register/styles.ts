@@ -4,6 +4,11 @@ export const Container = styled('main', {
   maxWidth: 572,
   margin: '$20 auto $4',
   paddingInline: '$4',
+
+  '@media(max-width: 768px)': {
+    margin: 0,
+    padding: '$5',
+  },
 })
 
 export const Header = styled('div', {
