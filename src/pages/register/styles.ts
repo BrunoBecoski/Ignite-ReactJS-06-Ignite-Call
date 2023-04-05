@@ -6,8 +6,10 @@ export const Container = styled('main', {
   paddingInline: '$4',
 
   '@media(max-width: 768px)': {
-    margin: 0,
-    padding: '$5',
+    maxWidth: '100%',
+    height: '100%',
+    margin: '0 auto',
+    padding: '$6',
   },
 })
 
