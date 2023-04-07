@@ -12,6 +12,20 @@ export const IntervalsContainer = styled('div', {
   marginBottom: '$4',
 })
 
+export const IntervalInputs = styled('div', {
+  display: 'flex',
+  alignItems: 'center',
+  gap: '$2',
+
+  'input::-webkit-calendar-picker-indicator': {
+    filter: 'invert(100%) brightness(40%)',
+  },
+
+  '@media(max-width: 768px)': {
+    flexWrap: 'wrap',
+  },
+})
+
 export const IntervalItem = styled('div', {
   display: 'flex',
   alignItems: 'center',
@@ -25,6 +39,12 @@ export const IntervalItem = styled('div', {
   '@media(max-width: 768px)': {
     flexWrap: 'wrap',
     gap: '$4',
+
+    [`&:has(button[data-state=unchecked])`]: {
+      [`& ${IntervalInputs}`]: {
+        display: 'none',
+      },
+    },
   },
 })
 
@@ -32,20 +52,6 @@ export const IntervalDay = styled('div', {
   display: 'flex',
   alignItems: 'center',
   gap: '$3',
-})
-
-export const IntervalInputs = styled('div', {
-  display: 'flex',
-  alignItems: 'center',
-  gap: '$2',
-
-  'input::-webkit-calendar-picker-indicator': {
-    filter: 'invert(100%) brightness(40%)',
-  },
-
-  '@media(max-width: 768px)': {
-    flexWrap: 'wrap',
-  },
 })
 
 export const FormError = styled(Text, {
