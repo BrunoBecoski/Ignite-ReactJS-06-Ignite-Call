@@ -28,15 +28,47 @@ export const TimePicker = styled('div', {
   borderLeft: '1px solid $gray600',
   padding: '$6 $6 0',
   overflowY: 'scroll',
+  background: '$gray800',
 
   position: 'absolute',
   top: 0,
   bottom: 0,
   right: 0,
   width: 280,
+
+  '@media(max-width: 900px)': {
+    width: '100%',
+  },
 })
 
-export const TimePickerHeader = styled(Text, {
+export const TimePickerHeader = styled('div', {
+  display: 'flex',
+  alignItems: 'flex-start',
+  justifyContent: 'space-between',
+  color: '$gray200',
+
+  button: {
+    all: 'unset',
+    cursor: 'pointer',
+    lineHeight: 0,
+    borderRadius: '$sm',
+
+    svg: {
+      width: '$5',
+      height: '$5',
+    },
+
+    '&:hover': {
+      color: '$gray100',
+    },
+
+    '&:focus': {
+      boxShadow: '0 0 0 2px $colors$gray100',
+    },
+  },
+})
+
+export const TimePickerTitle = styled(Text, {
   fontWeight: '$medium',
 
   span: {

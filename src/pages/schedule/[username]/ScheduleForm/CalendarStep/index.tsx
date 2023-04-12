@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useRouter } from 'next/router'
 import { useQuery } from '@tanstack/react-query'
 import dayjs from 'dayjs'
+import { X } from 'phosphor-react'
 
 import { api } from '../../../../../lib/axios'
 import { Calendar } from '../../../../../components/Calendar'
@@ -10,6 +11,7 @@ import {
   Container,
   TimePicker,
   TimePickerHeader,
+  TimePickerTitle,
   TimePickerItem,
   TimePickerList,
 } from './styles'
@@ -65,6 +67,10 @@ export function CalendarStep({ onSelectDateTime }: CalendarStepProps) {
     onSelectDateTime(dateWithTime)
   }
 
+  function handleCloseSelectTime() {
+    setSelectedDate(null)
+  }
+
   return (
     <Container isTimePickerOpen={isDateSelected}>
       <Calendar selectedDate={selectedDate} onDateSelected={setSelectedDate} />
@@ -72,7 +78,13 @@ export function CalendarStep({ onSelectDateTime }: CalendarStepProps) {
       {isDateSelected && (
         <TimePicker>
           <TimePickerHeader>
-            {weekDay}, <span>{describedDate}</span>
+            <TimePickerTitle>
+              {weekDay}, <span>{describedDate}</span>
+            </TimePickerTitle>
+
+            <button onClick={handleCloseSelectTime} title="Fechar dia">
+              <X />
+            </button>
           </TimePickerHeader>
 
           <TimePickerList>
