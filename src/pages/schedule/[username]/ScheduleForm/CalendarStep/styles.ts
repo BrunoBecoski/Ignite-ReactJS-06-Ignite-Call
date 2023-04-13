@@ -12,7 +12,9 @@ export const Container = styled(Box, {
       true: {
         gridTemplateColumns: '1fr 280px',
 
-        '@media(max-width: 900px)': {
+        '@media(max-width: 768px)': {
+          borderColor: 'transparent',
+
           gridTemplateColumns: '1fr',
         },
       },
@@ -36,8 +38,12 @@ export const TimePicker = styled('div', {
   right: 0,
   width: 280,
 
-  '@media(max-width: 900px)': {
+  '@media(max-width: 768px)': {
     width: '100%',
+    height: 'fit-content',
+
+    border: '1px solid $gray600',
+    borderRadius: '$md',
   },
 })
 
