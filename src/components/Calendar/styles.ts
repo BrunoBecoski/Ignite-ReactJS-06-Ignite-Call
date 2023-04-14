@@ -58,6 +58,10 @@ export const CalendarBody = styled('table', {
     color: '$gray200',
     fontWeight: '$medium',
     fontSize: '$sm',
+
+    '@media(max-width: 768px)': {
+      fontSize: '$xs',
+    },
   },
 
   'tbody:before': {
@@ -95,5 +99,9 @@ export const CalendarDay = styled('button', {
 
   '&:focus': {
     boxShadow: '0 0 0 2px $colors$gray100',
+  },
+
+  '@media(max-width: 768px)': {
+    fontSize: '$sm',
   },
 })
