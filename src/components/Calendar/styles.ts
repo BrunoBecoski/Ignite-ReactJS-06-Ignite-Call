@@ -84,6 +84,8 @@ export const CalendarDay = styled('button', {
   cursor: 'pointer',
   borderRadius: '$sm',
 
+  position: 'relative',
+
   '&:disabled': {
     background: 'none',
     cursor: 'default',
@@ -103,5 +105,22 @@ export const CalendarDay = styled('button', {
 
   '@media(max-width: 768px)': {
     fontSize: '$sm',
+  },
+
+  span: {
+    width: '$1',
+    height: '$1',
+    borderRadius: '$full',
+    background: '$gray100',
+
+    position: 'absolute',
+    top: '70%',
+    left: '50%',
+    transform: 'translateX(-50%)',
+
+    '@media(max-width: 768px)': {
+      width: '.15rem',
+      height: '.15rem',
+    },
   },
 })

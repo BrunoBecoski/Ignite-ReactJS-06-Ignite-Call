@@ -185,6 +185,7 @@ export function Calendar({ selectedDate, onDateSelected }: CalendarProps) {
                         disabled={disabled}
                       >
                         {date.get('date')}
+                        {date.isSame(new Date(), 'date') && <span />}
                       </CalendarDay>
                     </td>
                   )
