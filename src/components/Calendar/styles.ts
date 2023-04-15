@@ -114,7 +114,7 @@ export const CalendarDay = styled('button', {
     background: '$gray100',
 
     position: 'absolute',
-    top: '70%',
+    top: '75%',
     left: '50%',
     transform: 'translateX(-50%)',
 
