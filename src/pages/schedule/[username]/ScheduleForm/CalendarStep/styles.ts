@@ -5,7 +5,6 @@ export const Container = styled(Box, {
   padding: 0,
   display: 'grid',
   maxWidth: '100%',
-  position: 'relative',
 
   variants: {
     isTimePickerOpen: {
@@ -13,13 +12,19 @@ export const Container = styled(Box, {
         gridTemplateColumns: '1fr 280px',
 
         '@media(max-width: 768px)': {
-          borderColor: 'transparent',
+          background: 'none',
+          border: 'none',
 
+          maxWidth: '320px',
           gridTemplateColumns: '1fr',
+
+          '> div:first-child': {
+            display: 'none',
+          },
         },
       },
       false: {
-        width: 540,
+        maxWidth: 540,
         gridTemplateColumns: '1fr',
       },
     },
@@ -32,11 +37,25 @@ export const TimePicker = styled('div', {
   overflowY: 'scroll',
   background: '$gray800',
 
-  position: 'absolute',
-  top: 0,
-  bottom: 0,
-  right: 0,
-  width: 280,
+  borderRadius: '0 $md $md 0',
+
+  '&::-webkit-scrollbar': {
+    width: '$2',
+  },
+
+  '&::-webkit-scrollbar-track': {
+    borderRadius: '$md',
+    background: '$gray600',
+  },
+
+  '&::-webkit-scrollbar-thumb': {
+    borderRadius: '$md',
+    background: '$gray400',
+  },
+
+  '&::-webkit-scrollbar-thumb:hover': {
+    background: '$gray200',
+  },
 
   '@media(max-width: 768px)': {
     width: '100%',
