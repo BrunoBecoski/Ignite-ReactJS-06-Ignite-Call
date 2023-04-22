@@ -17,3 +17,4 @@
 </div>
 
 ## Tecnologias
+- [TypeScript](https://www.typescriptlang.org)
