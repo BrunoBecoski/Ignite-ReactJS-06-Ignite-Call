@@ -18,3 +18,4 @@
 
 ## Tecnologias
 - [TypeScript](https://www.typescriptlang.org)
+- [Next.js](https://nextjs.org)
