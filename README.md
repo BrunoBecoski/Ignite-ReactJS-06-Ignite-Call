@@ -19,3 +19,4 @@
 ## Tecnologias
 - [TypeScript](https://www.typescriptlang.org)
 - [Next.js](https://nextjs.org)
+- [MySQL](https://www.mysql.com)
