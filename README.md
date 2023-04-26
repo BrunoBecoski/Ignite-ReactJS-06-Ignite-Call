@@ -8,6 +8,8 @@
 
 <div align="center">
   <a href="#tecnologias">Tecnologias</a>
+  |
+  <a href="#mysql">MySQL</a>
 </div>
 
 <br />
@@ -20,3 +22,9 @@
 - [TypeScript](https://www.typescriptlang.org)
 - [Next.js](https://nextjs.org)
 - [MySQL](https://www.mysql.com)
+
+## MySQL
+
+<div align="center">
+  <img src="/.github/mysql.png"
+</div>
