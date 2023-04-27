@@ -21,10 +21,11 @@
 ## Tecnologias
 - [TypeScript](https://www.typescriptlang.org)
 - [Next.js](https://nextjs.org)
+- [Prisma](https://www.prisma.io)
 - [MySQL](https://www.mysql.com)
 
 ## MySQL
 
 <div align="center">
-  <img src="/.github/mysql.png"
+  <img src=".github/mysql.png"
 </div>
