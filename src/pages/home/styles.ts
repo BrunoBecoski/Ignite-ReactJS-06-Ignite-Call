@@ -10,6 +10,9 @@ export const Container = styled('div', {
 
   '@media(max-width: 768px)': {
     padding: '$5',
+    margin: '0 auto',
+    alignItems: 'baseline',
+
     gap: 0,
     flexWrap: 'wrap',
   },
@@ -43,10 +46,7 @@ export const Preview = styled('div', {
 
   '@media(max-width: 768px)': {
     padding: 0,
-
-    img: {
-      width: 'calc(100vw - $10)',
-      height: 'auto',
-    },
+    content:
+      'url(/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fapp-preview_mobile.e5798581.png&w=1080&q=100)',
   },
 })
