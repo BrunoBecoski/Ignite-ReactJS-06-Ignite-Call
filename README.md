@@ -10,6 +10,8 @@
   <a href="#tecnologias">Tecnologias</a>
   |
   <a href="#mysql">MySQL</a>
+  |
+  <a href="#layout">Layout</a>
 </div>
 
 <br />
@@ -27,5 +29,18 @@
 ## MySQL
 
 <div align="center">
-  <img src=".github/mysql.png"
+  <img src=".github/mysql.png" />
+</div>
+
+## Layout
+
+### Landing
+<div align="center">
+  <img src=".github/landing.png" />
+</div>
+  
+### Register
+<div align="center">
+  <img src=".github/register.png" />
+</div>
 </div>
