@@ -35,12 +35,19 @@
 ## Layout
 
 ### Landing
+
 <div align="center">
   <img src=".github/landing.png" />
 </div>
-  
+
 ### Register
+
 <div align="center">
   <img src=".github/register.png" />
 </div>
+
+### Calendar
+
+<div align="center">
+  <img src=".github/calendar.png" />
 </div>
